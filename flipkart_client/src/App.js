@@ -8,6 +8,7 @@ import DetailView from './Components/ItemDetails/DetailView'
 import TemplateProvider from './TemplateProvider'
 import ContextProvider from './ContextProvider'
 import Cart from './Components/Cart/Cart'
+import Buyed from './Components/Buyed';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
               <Route path= '/' element={<Home />} />
               <Route path= '/cart' element={<Cart />} />
               <Route path= '/product/:id' element={<DetailView />} />
+                <Route path= '/buyed' element={<Buyed />} />
             </Routes>
           </Box>
         </BrowserRouter>
