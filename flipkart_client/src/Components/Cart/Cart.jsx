@@ -61,7 +61,14 @@ const Cart = () => {
     const removeItemFromCart = (id) => {
         dispatch(removeFromCart(id))
     }
+    
+    const check_logged = () => {
+        if(user.email === '') return false;
+        return true;
+    }
+    
     const buyNow = () => {
+        if(check_logged() === false) return ;
         console.log("Buyed!")
         setTimeout(()=>{
             cartItems.map(item =>{
