@@ -67,7 +67,7 @@ const Cart = () => {
             cartItems.map(item =>{
                 removeItemFromCart(item.id)
             })
-            navigate('/Buyed')
+            navigate('/')
         }, 2000)
     }
 
